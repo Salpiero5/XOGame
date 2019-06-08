@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 class Player {
 
-    private char c1 = ' ';
-    private char c2 = ' ';
+    private char markP1 = ' ';
+    private char markP2 = ' ';
 
 
     Player() {
 
-        setC1();
-        setC2();
+        setMarkP1();
+        setMarkP2();
     }
 
     private char mark(int player) {
@@ -32,18 +32,18 @@ class Player {
         return h;
     }
 
-    private void setC1() {
-        c1 = mark(1);
+    private void setMarkP1() {
+        markP1 = mark(1);
     }
 
-    char getC1() { return c1; }
+    char getMarkP1() { return markP1; }
 
-    private void setC2() {
-        c2 = mark(2);
+    private void setMarkP2() {
+        markP2 = mark(2);
     }
 
-    char getC2() {
-        return c2;
+    char getMarkP2() {
+        return markP2;
     }
 
 }
