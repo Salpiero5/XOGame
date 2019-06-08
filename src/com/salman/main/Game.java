@@ -83,7 +83,7 @@ class Game {
                 || (c[0] == p.getC1() && c[0] == c[4] && c[4] == c[8])
                 || (c[2] == p.getC1() && c[2] == c[4] && c[4] == c[6]) //Top 2 lines check diagonals
         ) {
-            System.out.println("Player " + player + "(" + p.getC1() + ") is Winner!");
+            System.out.println("Player " + player + "(" + p.getC1() + ") is Winner Hooora!");
             draw();
             return true;
         }
@@ -97,7 +97,7 @@ class Game {
                 || (c[0] == p.getC2() && c[0] == c[4] && c[4] == c[8])
                 || (c[2] == p.getC2() && c[2] == c[4] && c[4] == c[6]) //Top 2 lines check diagonals
         ) {
-            System.out.println("Player " + player + "(" + p.getC2() + ") is Winner!");
+            System.out.println("Player " + player + "(" + p.getC2() + ") is Winner Hooora!");
             draw();
             return true;
         }
