@@ -6,6 +6,7 @@ class Game {
 
     private char[] board = new char[9];
     private int player = 1;
+    private int tie = 0;
     Player p = new Player();
 
     /**
@@ -36,6 +37,8 @@ class Game {
                     Scanner sc = new Scanner(System.in);
                     int field = sc.nextInt();
 
+                    tie++;
+
                     if (board[field - 1] == p.getMarkP1() || board[field - 1] == p.getMarkP2()) {
 
                         System.out.println("This Field Is Full! Enter Another Field");
@@ -49,6 +52,12 @@ class Game {
 
                         boolean winner = checkRules(); //Check the game rules (Which on is winner)
                         if (winner) {
+                            return;
+                        }
+
+                        if(tie == 9){
+                            System.out.println("The game is tie");
+                            draw();
                             return;
                         }
 
@@ -101,6 +110,7 @@ class Game {
             draw();
             return true;
         }
+
         return false;
     }
 
